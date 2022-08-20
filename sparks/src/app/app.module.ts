@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesModule } from './pages/pages.module';
 import { TemplatesModule } from './templates/templates.module';
+import { GoogleServiceComponent } from './google-service/google-service.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GoogleServiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     PagesModule,
-    TemplatesModule
+    TemplatesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
